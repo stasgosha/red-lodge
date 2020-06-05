@@ -1,0 +1,273 @@
+.services-section{
+	padding: 95px 0 80px;
+
+	.section-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: calc(100% + 15px * 2);
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: 85px;
+
+		.item{
+			padding: 0 15px;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		padding: 50px 0 30px;
+
+		.section-header{
+			margin-bottom: 25px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.section-header{
+			.btn{
+				padding-left: 30px;
+				padding-right: 30px;
+				white-space: nowrap;
+			}
+		}
+
+		.section-caption{
+			.sc-title{
+				padding-left: 85px;
+				text-indent: -40px;
+
+				&:before{
+					top: 10px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.section-header{
+			flex-direction: column;
+
+			.btn{
+				width: 220px;
+			}
+		}
+
+		.section-caption{
+			margin-bottom: 16px;
+		}
+	}
+}
+
+.services-list{
+	display: flex;
+	width: calc(100% + 10px * 2);
+	margin-left: -10px;
+	margin-right: -10px;
+	
+	.item{
+		width: 20%;
+		padding: 0 10px;
+	}
+
+	&:not(.no-ladder){
+		.item{
+			@media screen and (min-width: 1300px){
+				&:nth-child(2),
+				&:nth-child(4),
+				&:nth-child(7),
+				&:nth-child(9),
+				&:nth-child(12),
+				&:nth-child(14){
+					margin-top: 60px;
+				}
+			}
+		}
+	}
+
+	&.no-ladder{
+		.item{
+			transition: all $t;
+			position: relative;
+
+			&:before{
+				content: '';
+				display: block;
+				transition: all $t;
+				width: 100%;
+				height: 60px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: -1;
+			}
+
+			@media screen and (min-width: 1300px){
+				&:hover{
+					transform: translateY(60px);
+
+					&:before{
+						transform: translateY(-60px);
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		width: 133%;
+		margin-right: -33%;
+		margin-top: 0 !important;
+	}
+
+	@media screen and (max-width: 575px){
+		width: calc(100% + 202px);
+		margin-right: -202px;
+	}
+}
+
+.services-slider-nav{
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+.service-card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	min-height: 390px;
+	overflow: hidden;
+	color: $text-color;
+
+	&:before{
+		content: '';
+		display: block;
+		width: calc(100% - 20px);
+		height: calc(100% - 20px);
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) scale(1.2);
+		border: 6px solid rgba(#fff, .72);
+		opacity: 0;
+		pointer-events: none;
+		transition: all $t;
+	}
+
+	.card-bg{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -1;
+
+		img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			object-fit: cover;
+			object-position: center center;
+			font-family: 'object-fit: cover; object-position: center center;';
+		}
+	}
+
+	.card-inner{
+
+	}
+
+	.card-content{
+		padding: 40px 20px;
+	}
+
+	&.with-gradient{
+		.card-content{
+			position: relative;
+			z-index: 2;
+
+			&:before{
+				content: '';
+				display: block;
+				width: 100%;
+				height: 150px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: -1;
+				background: linear-gradient(180deg, #F7F7F7 0%, rgba(228, 221, 221, 0) 100%);
+			}
+		}
+	}
+
+	.card-price{
+		margin-top: 9px;
+		font-size: 14px;
+
+		strong{
+			font-size: 16px;
+			font-weight: bold;
+		}
+	}
+
+	.card-footer{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30px 38px;
+		transition: all $t;
+		transition-delay: 0.1s;
+		transform: translateY(40px);
+		opacity: 0;
+		visibility: hidden;
+
+		.btn{
+			width: 100%;
+
+			&:after{
+				content: '';
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+	.card-caption{
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: $text-dark;
+		text-transform: uppercase;
+		position: relative;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 30px;
+			height: 2px;
+			background: $primary;
+			position: absolute;
+			left: 0;
+			bottom: -7px;
+		}
+	}
+
+	&:hover{
+		&:before{
+			transform: translate(-50%, -50%) scale(1);
+			opacity: 1;
+		}
+
+		.card-footer{
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}

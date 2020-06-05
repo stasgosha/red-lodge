@@ -1,0 +1,56 @@
+.faq-section{
+	padding: 90px 0 80px;
+	position: relative;
+
+	.section-bg{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			object-fit: cover;
+			object-position: center center;
+			font-family: 'object-fit: cover; object-position: center center;';
+		}
+	}
+
+	.container{
+		position: relative;
+	}
+
+	.section-caption{
+		margin-bottom: 60px;
+	}
+
+	.section-footer{
+		margin-top: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.section-content{
+		max-width: 1080px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (max-width: 991px){
+		padding: 50px 0;
+
+		.section-caption{
+			margin-bottom: 30px;
+		}
+
+		.section-footer{
+			margin-top: 30px;
+		}
+	}
+}

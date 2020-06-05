@@ -1,0 +1,95 @@
+.accordion{
+	border-bottom: 1px dashed rgba($text-color, .35);
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+
+	.ac-header{
+		display: flex;
+		align-items: center;
+		padding: 20px 0px 0;
+		cursor: pointer;
+		justify-content: space-between;
+		cursor: pointer;
+
+		&:hover{
+			.ac-caption{
+				color: $primary;
+			}
+
+			.ac-opener{
+				.btn-icon{
+					fill: $primary;
+				}
+			}
+		}
+	}
+
+	.ac-caption{
+		margin-bottom: 0;
+		font-size: 18px;
+		font-weight: 600;
+		color: $text-dark;
+		transition: all $t;
+		max-width: 700px;
+	}
+
+	.ac-opener{
+		position: relative;
+		width: 15px;
+		height: 15px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: none;
+		margin-left: 30px;
+
+		.btn-icon{
+			width: 100%;
+			height: 100%;
+			fill: #000;
+			transition: all $t;
+			display: block;
+		}
+
+		&:hover{
+			.btn-icon{
+				fill: $primary;
+			}
+		}
+	}
+
+	.ac-content{
+		width: 100%;
+		padding-top: 10px;
+		display: none;
+	}
+
+	&.opened{
+		.ac-caption{
+			color: $primary;
+		}
+
+		.ac-opener{
+			transform: rotate(-180deg);
+
+			.btn-icon{
+				fill: $primary;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.ac-caption{
+			font-size: 16px;
+			line-height: 1.3;
+		}
+	}
+
+	@media screen and (max-width: 374px){
+		.ac-caption{
+			font-size: 14px;
+		}
+	}
+}

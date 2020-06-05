@@ -1,0 +1,78 @@
+.btn{
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	font-size: 15px;
+	line-height: 24px;
+	padding: 10px 45px;
+	min-height: 50px;
+	background: $primary;
+	font-family: $main-font;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: all $t;
+	cursor: pointer;
+	border-radius: 25px;
+	appearance: none;
+	box-shadow: none;
+	border: 1px solid $primary;
+	// min-width: 180px;
+
+	&:hover,
+	&:focus{
+		background: lighten($primary, 10%);
+		border-color: lighten($primary, 10%);
+	}
+
+	&:focus{
+		outline: none;
+	}
+
+	&.btn-light{
+		color: $primary;
+		background: transparent;
+
+		&:hover,
+		&:focus{
+			background: $primary;
+			border-color: $primary;
+			color: #fff;
+		}
+	}
+
+	&.btn-white{
+		background: #fff;
+		border-color: #fff;
+		color: $primary;
+
+		&:hover,
+		&:focus{
+			background: $primary;
+			border-color: $primary;
+			color: #fff;
+		}
+	}
+
+	&.with-decoration{
+		position: relative;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 99px;
+			height: 35px;
+			position: absolute;
+			left: calc(100% - 35px);
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: -1;
+			background: url(../img/decorations/btn-leaves.svg) no-repeat center center / contain;
+			pointer-events: none;
+		}
+	}
+
+	&.btn-fullwidth{
+		width: 100%;
+	}
+}

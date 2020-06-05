@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Главная | Red Lodge</title>
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+	<link rel="stylesheet" href="css/odometer-theme-minimal.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper" id="top">
+		<!-- ↓↓ тут нужно добавить класс .inner-page для всех внутренних страниц ↓↓ -->
+		<div class="page">
+			<header class="header">
+				<div class="container">
+					<div class="header-inner">
+						<div class="header-block">
+							<a href="index.html" class="logo-block">
+								<img src="img/logo.png" alt="">
+							</a>
+						</div>
+						<div class="header-block md-hidden">
+							<nav class="top-nav">
+								<ul>
+									<li><a href="about.html">О салоне</a></li>
+									<li><a href="services.html">Услуги</a></li>
+									<li><a href="prices.html">Цены</a></li>
+									<li><a href="actions.html">Акции</a></li>
+									<li><a href="reviews.html">Отзывы</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header-block flex">
+							<div class="phone-block">
+								<a href="tel:+74953747581" class="phone-link sm-hidden">+7 (495) 374-75-81</a>
+								<a href="https://wa.me/74953747581" class="whatsapp-link">
+									<svg class="link-icon">
+										<use xlink:href="img/icons-sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+							</div>
+							<button class="menu-opener md-visible-flex" aria-label="Навигация">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="mobile-top-nav">
+					<ul class="mobile-nav">
+						<li><a href="about.html">О салоне</a></li>
+						<li><a href="services.html">Услуги</a></li>
+						<li><a href="prices.html">Цены</a></li>
+						<li><a href="actions.html">Акции</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<div class="nav-content">
+						<a href="tel:+74953747581" class="phone-link sm-visible">+7 (495) 374-75-81</a>
+						<button class="btn btn-light" data-modal="#callback-modal">Обратный звонок</button>
+					</div>
+				</div>
+			</header>
+			<div class="page-content">
+				<section class="first-screen-section">
+					<picture class="section-bg">
+						<img src="img/backgrounds/first-screen-bg.svg" alt="">
+					</picture>
+					<div class="container">
+						<div class="section-inner">
+							<div class="section-content">
+								<h1 class="first-screen-caption"><strong>Red Lodge</strong><br>Получите скидку 20% <br>при первом визите в наш салон!</h1>
+								<div class="section-features">
+									<div class="item">
+										<picture class="item-icon">
+											<img src="img/big-icons/master.svg" alt="">
+										</picture>
+										<div class="item-text">Наши мастера имеют <br>высокий уровень подготовки</div>
+									</div>
+									<div class="item">
+										<picture class="item-icon">
+											<img src="img/big-icons/location.svg" alt="">
+										</picture>
+										<div class="item-text">Мы в центре Москвы - <br>м. Таганская, ул. Воронцовская д. 26</div>
+									</div>
+								</div>
+								<div class="section-footer">
+									<a href="about.html" class="btn btn-white">Подробнее о салоне</a>
+								</div>
+							</div>
+							<div class="section-slider">
+								<div class="first-screen-slider-wrapper">
+									<div class="first-screen-slider">
+										<div class="slide">
+											<picture class="slide-image">
+												<source srcset="img/first-screen/woman.webp" type="image/webp" />
+												<img src="img/first-screen/woman.png" alt="">
+											</picture>
+										</div>
+										<div class="slide">
+											<picture class="slide-image">
+												<source srcset="img/first-screen/woman.webp" type="image/webp" />
+												<img src="img/first-screen/woman.png" alt="">
+											</picture>
+										</div>
+										<div class="slide">
+											<picture class="slide-image">
+												<source srcset="img/first-screen/woman.webp" type="image/webp" />
+												<img src="img/first-screen/woman.png" alt="">
+											</picture>
+										</div>
+									</div>
+									<div class="first-screen-slider-nav default-slider-nav">
+										<div class="nav-dots"></div>
+										<div class="nav-arrows"></div>
+									</div>
+									<div class="tour-3d-block">
+										<div class="block-text">3D тур <br>по салону</div>
+										<button class="block-btn">
+											<img src="img/big-icons/play.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="services-section services-slider-scope">
+					<div class="container">
+						<div class="section-header">
+							<div class="item">
+								<div class="section-caption">
+									<h2 class="sc-title">Направления преображения</h2>
+								</div>
+							</div>
+							<div class="item">
+								<button class="btn btn-light" data-modal="#callback-modal">Обратный звонок</button>
+							</div>
+						</div>
+
+						<div class="services-list services-slider">
+							<div class="item">
+								<a href="single-service.html" class="service-card">
+									<picture class="card-bg">
+										<img src="img/services/service-1.jpg" alt="">
+									</picture>
+									<div class="card-content">
+										<h3 class="card-caption">Парикмахерский зал</h3>
+									</div>
+									<div class="card-footer">
+										<div class="btn">Подробнее</div>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="single-service.html" class="service-card">
+									<picture class="card-bg">
+										<img src="img/services/service-2.jpg" alt="">
+									</picture>
+									<div class="card-content">
+										<h3 class="card-caption">Ногтевой сервис</h3>
+									</div>
+									<div class="card-footer">
+										<div class="btn">Подробнее</div>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="single-service.html" class="service-card">
+									<picture class="card-bg">
+										<img src="img/services/service-3.jpg" alt="">
+									</picture>
+									<div class="card-content">
+										<h3 class="card-caption">Удаление волос</h3>
+									</div>
+									<div class="card-footer">
+										<div class="btn">Подробнее</div>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="single-service.html" class="service-card">
+									<picture class="card-bg">
+										<img src="img/services/service-4.jpg" alt="">
+									</picture>
+									<div class="card-content">
+										<h3 class="card-caption">Косметология</h3>
+									</div>
+									<div class="card-footer">
+										<div class="btn">Подробнее</div>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="single-service.html" class="service-card">
+									<picture class="card-bg">
+										<img src="img/services/service-5.jpg" alt="">
+									</picture>
+									<div class="card-content">
+										<h3 class="card-caption">Массаж</h3>
+									</div>
+									<div class="card-footer">
+										<div class="btn">Подробнее</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="lg-visible-flex services-slider-nav default-slider-nav">
+							<div class="nav-dots"></div>
+							<div class="nav-arrows"></div>
+						</div>
+					</div>
+				</section>
+
+				<section class="welcome-section">
+					<picture class="section-bg">
+						<img src="img/backgrounds/welcome-bg.svg" alt="">
+					</picture>
+					<div class="container">
+						<div class="section-inner">
+							<div class="section-content">
+								<div class="section-caption">
+									<h2 class="sc-title">Welcome to <div class="nowrap">RED LODGE!</div></h2>
+								</div>
+								<div class="section-text tpg">
+									<p>Салон красоты — заведение, занимающееся косметическим обслуживанием мужчин и женщин. К этой же ветви обслуживания относятся салоны причёсок и спа. Салоны красоты в отличие от них занимаются в основном работой с лицами и телами людей.</p>
+								</div>
+								<div class="section-footer">
+									<address class="addr-block">
+										<div class="block-addr">
+											<svg class="block-icon">
+												<use xlink:href="img/icons-sprite.svg#location"></use>
+											</svg>
+											<div class="block-text">
+												<p>м. Таганская, ул. Воронцовская, д. 26</p>
+											</div>
+										</div>
+										<div class="block-socials">
+											<ul class="socials-list">
+												<li>
+													<a href="#" target="_blank" rel="nofollow" title="Instagram" class="instagram">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#instagram"></use>
+														</svg>
+													</a>
+												</li>
+												<li>
+													<a href="#" target="_blank" rel="nofollow" title="Facebook" class="facebook">
+														<svg class="link-icon">
+															<use xlink:href="img/icons-sprite.svg#facebook"></use>
+														</svg>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</address>
+								</div>
+							</div>
+							<div class="section-slider photos-slider-scope">
+								<div class="photos-slider">
+									<div class="slide">
+										<a href="img/photos/photo-1.jpg" class="photo-card fancybox">
+											<img src="img/photos/photo-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="slide">
+										<a href="img/photos/photo-2.jpg" class="photo-card fancybox">
+											<img src="img/photos/photo-2.jpg" alt="">
+										</a>
+									</div>
+									<div class="slide">
+										<a href="img/photos/photo-1.jpg" class="photo-card fancybox">
+											<img src="img/photos/photo-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="slide">
+										<a href="img/photos/photo-2.jpg" class="photo-card fancybox">
+											<img src="img/photos/photo-2.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="photos-slider-nav default-slider-nav lg-white">
+									<div class="nav-dots"></div>
+									<div class="nav-arrows"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="advantages-section">
+					<div class="container">
+						<div class="section-caption overline">
+							<h2 class="sc-title">Преимущества для наших гостей</h2>
+						</div>
+
+						<div class="advantages-list">
+							<div class="item">
+								<div class="advantage-card">
+									<picture class="card-icon">
+										<img src="img/big-icons/car.svg" alt="">
+									</picture>
+									<div class="card-content">
+										<p class="card-caption">Бесплатная <br>парковка</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="advantage-card">
+									<picture class="card-icon">
+										<img src="img/big-icons/card.svg" alt="">
+									</picture>
+									<div class="card-content">
+										<p class="card-caption">Карта любимого клиента <br>с 1 визита</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="advantage-card">
+									<picture class="card-icon">
+										<img src="img/big-icons/discount.svg" alt="">
+									</picture>
+									<div class="card-content">
+										<p class="card-caption">Акции и <strong>скидки до 20%</strong> <br>на услуги</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="advantage-card">
+									<picture class="card-icon">
+										<img src="img/big-icons/bottle.svg" alt="">
+									</picture>
+									<div class="card-content">
+										<p class="card-caption">Бутик косметики <br>премиальных брендов</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="team-section">
+					<picture class="section-bg">
+						<img src="img/backgrounds/team-bg.svg" alt="">
+					</picture>
+					<div class="container">
+						<div class="section-inner">
+							<picture class="section-image">
+								<source srcset="img/team/big-image.webp" type="image/webp" />
+								<img src="img/team/big-image.png" alt="">
+							</picture>
+							<div class="section-content">
+								<div class="section-caption with-red-line">
+									<h2 class="sc-title">Творческая <br>команда RED LODGE</h2>
+									<p class="sc-subtitle">На этом месте нужно будет разместить небольшой текст о команде буквально две строки текста.</p>
+								</div>
+								<div class="sm-visible">
+									<a href="team.html" class="btn btn-light">Познакомиться с командой</a>
+								</div>
+								<div class="section-slider">
+									<div class="team-slider-wrapper">
+										<!-- >= 768 -->
+										<div class="team-slider">
+											<div class="slide">
+												<div class="team-card">
+													<picture class="card-photo">
+														<source srcset="img/team/master-1.webp" type="image/webp" />
+														<img src="img/team/master-1.png" alt="">
+													</picture>
+													<div class="card-content">
+														<p class="card-name">Татьяна Сулиманова</p>
+														<div class="card-hidden-content">
+															<p class="card-position">Парикмахер-стилист</p>
+															<p class="card-experience">Опыт более 10 лет</p>
+															<a href="single-master.html" class="more-btn">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="team-card">
+													<picture class="card-photo">
+														<source srcset="img/team/master-1.webp" type="image/webp" />
+														<img src="img/team/master-1.png" alt="">
+													</picture>
+													<div class="card-content">
+														<p class="card-name">Татьяна Сулиманова</p>
+														<div class="card-hidden-content">
+															<p class="card-position">Парикмахер-стилист</p>
+															<p class="card-experience">Опыт более 10 лет</p>
+															<a href="single-master.html" class="more-btn">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="team-card">
+													<picture class="card-photo">
+														<source srcset="img/team/master-1.webp" type="image/webp" />
+														<img src="img/team/master-1.png" alt="">
+													</picture>
+													<div class="card-content">
+														<p class="card-name">Татьяна Сулиманова</p>
+														<div class="card-hidden-content">
+															<p class="card-position">Парикмахер-стилист</p>
+															<p class="card-experience">Опыт более 10 лет</p>
+															<a href="single-master.html" class="more-btn">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="team-card">
+													<picture class="card-photo">
+														<source srcset="img/team/master-1.webp" type="image/webp" />
+														<img src="img/team/master-1.png" alt="">
+													</picture>
+													<div class="card-content">
+														<p class="card-name">Татьяна Сулиманова</p>
+														<div class="card-hidden-content">
+															<p class="card-position">Парикмахер-стилист</p>
+															<p class="card-experience">Опыт более 10 лет</p>
+															<a href="single-master.html" class="more-btn">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="team-card">
+													<picture class="card-photo">
+														<source srcset="img/team/master-1.webp" type="image/webp" />
+														<img src="img/team/master-1.png" alt="">
+													</picture>
+													<div class="card-content">
+														<p class="card-name">Татьяна Сулиманова</p>
+														<div class="card-hidden-content">
+															<p class="card-position">Парикмахер-стилист</p>
+															<p class="card-experience">Опыт более 10 лет</p>
+															<a href="single-master.html" class="more-btn">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- < 768 -->
+										<div class="mobile-team-slider">
+											<div class="slide">
+												<div class="team-card">
+													<picture class="card-photo">
+														<source srcset="img/team/big-image.webp" type="image/webp" />
+														<img src="img/team/big-image.png" alt="">
+													</picture>
+													<div class="card-content">
+														<p class="card-name">Татьяна Сулиманова</p>
+														<div class="card-hidden-content">
+															<p class="card-position">Парикмахер-стилист</p>
+															<p class="card-experience">Опыт более 10 лет</p>
+															<a href="single-master.html" class="more-btn">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="team-card">
+													<picture class="card-photo">
+														<source srcset="img/team/big-image.webp" type="image/webp" />
+														<img src="img/team/big-image.png" alt="">
+													</picture>
+													<div class="card-content">
+														<p class="card-name">Татьяна Сулиманова</p>
+														<div class="card-hidden-content">
+															<p class="card-position">Парикмахер-стилист</p>
+															<p class="card-experience">Опыт более 10 лет</p>
+															<a href="single-master.html" class="more-btn">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="team-card">
+													<picture class="card-photo">
+														<source srcset="img/team/big-image.webp" type="image/webp" />
+														<img src="img/team/big-image.png" alt="">
+													</picture>
+													<div class="card-content">
+														<p class="card-name">Татьяна Сулиманова</p>
+														<div class="card-hidden-content">
+															<p class="card-position">Парикмахер-стилист</p>
+															<p class="card-experience">Опыт более 10 лет</p>
+															<a href="single-master.html" class="more-btn">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="team-card">
+													<picture class="card-photo">
+														<source srcset="img/team/big-image.webp" type="image/webp" />
+														<img src="img/team/big-image.png" alt="">
+													</picture>
+													<div class="card-content">
+														<p class="card-name">Татьяна Сулиманова</p>
+														<div class="card-hidden-content">
+															<p class="card-position">Парикмахер-стилист</p>
+															<p class="card-experience">Опыт более 10 лет</p>
+															<a href="single-master.html" class="more-btn">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="slide">
+												<div class="team-card">
+													<picture class="card-photo">
+														<source srcset="img/team/big-image.webp" type="image/webp" />
+														<img src="img/team/big-image.png" alt="">
+													</picture>
+													<div class="card-content">
+														<p class="card-name">Татьяна Сулиманова</p>
+														<div class="card-hidden-content">
+															<p class="card-position">Парикмахер-стилист</p>
+															<p class="card-experience">Опыт более 10 лет</p>
+															<a href="single-master.html" class="more-btn">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="slider-footer">
+											<div class="default-slider-nav slider-nav">
+												<div class="nav-arrows"></div>
+												<div class="nav-dots"></div>
+											</div>
+											<div class="see-all sm-hidden">
+												<a href="team.html" class="btn btn-light">Познакомиться с командой</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="our-works-section works-slider-scope">
+					<div class="container">
+						<div class="section-inner">
+							<div class="section-content">
+								<div class="section-caption with-red-line">
+									<h2 class="sc-title">Примеры работ <br>Beauty стилистов</h2>
+									<p class="sc-subtitle">На этом месте нужно будет разместить <br>небольшой текст буквально две строки текста.</p>
+								</div>
+								<div class="section-footer">
+									<div class="item">
+										<a href="portfolio.html" class="text-link">Портфолио работ</a>
+									</div>
+									<div class="item">
+										<div class="works-slider-nav default-slider-nav">
+											<div class="nav-arrows"></div>
+											<div class="nav-dots"></div>
+										</div>
+									</div>
+								</div>
+								<div class="section-first-slider sm-hidden">
+									<div class="works-slider first">
+										<div class="slide">
+											<a href="img/works/image-1.jpg" class="fancybox">
+												<img src="img/works/image-1.jpg" alt="">
+											</a>
+										</div>
+										<div class="slide">
+											<a href="img/works/image-1.jpg" class="fancybox">
+												<img src="img/works/image-1.jpg" alt="">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-sliders sm-hidden">
+								<div class="left">
+									<div class="works-slider second">
+										<div class="slide">
+											<a href="img/works/image-2.jpg" class="fancybox">
+												<img src="img/works/image-2.jpg" alt="">
+											</a>
+										</div>
+										<div class="slide">
+											<a href="img/works/image-2.jpg" class="fancybox">
+												<img src="img/works/image-2.jpg" alt="">
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<div class="item">
+										<div class="works-slider third">
+											<div class="slide">
+												<a href="img/works/image-3.jpg" class="fancybox">
+													<img src="img/works/image-3.jpg" alt="">
+												</a>
+											</div>
+											<div class="slide">
+												<a href="img/works/image-3.jpg" class="fancybox">
+													<img src="img/works/image-3.jpg" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="works-slider fourth">
+											<div class="slide">
+												<a href="img/works/image-4.jpg" class="fancybox">
+													<img src="img/works/image-4.jpg" alt="">
+												</a>
+											</div>
+											<div class="slide">
+												<a href="img/works/image-4.jpg" class="fancybox">
+													<img src="img/works/image-4.jpg" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-mobile-slider sm-visible">
+								<div class="mobile-works-slider">
+									<div class="slide">
+										<a href="img/works/image-1.jpg" class="fancybox">
+											<img src="img/works/image-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="slide">
+										<a href="img/works/image-2.jpg" class="fancybox">
+											<img src="img/works/image-2.jpg" alt="">
+										</a>
+									</div>
+									<div class="slide">
+										<a href="img/works/image-3.jpg" class="fancybox">
+											<img src="img/works/image-3.jpg" alt="">
+										</a>
+									</div>
+									<div class="slide">
+										<a href="img/works/image-4.jpg" class="fancybox">
+											<img src="img/works/image-4.jpg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="care-section">
+					<div class="container">
+						<div class="section-caption">
+							<h2 class="sc-title">Заботимся о Вашей красоте!</h2>
+							<p class="sc-subtitle">Карта Любимого клиента со скидкой <strong>от 7 до 20%</strong> при первом посещении нашего салона.</p>
+						</div>
+						<div class="cards-list columns-2 md-columns-1">
+							<div class="item">
+								<div class="action-cards-block">
+									<div class="block-item">
+										<div class="action-card red">
+											<picture class="card-logo">
+												<img src="img/small-logo.png" alt="">
+											</picture>
+											<h3 class="card-caption">Карта любимого <br>клиента</h3>
+										</div>
+									</div>
+									<div class="block-item">
+										<div class="action-card dark">
+											<picture class="card-logo">
+												<img src="img/small-logo.png" alt="">
+											</picture>
+											<h3 class="card-caption">Карта любимого <br>клиента</h3>
+											<p class="card-discount">20%</p>
+										</div>
+									</div>
+									<!-- <div class="block-item">
+										<div class="action-card red">
+											<picture class="card-logo">
+												<img src="img/small-logo.png" alt="">
+											</picture>
+											<h3 class="card-caption">Карта любимого <br>клиента</h3>
+											<p class="card-discount">20%</p>
+										</div>
+									</div> -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="boutique-card">
+									<h3 class="card-caption"><strong>Бутик</strong><br>уходовой косметики</h3>
+									<picture class="card-image">
+										<source srcset="img/tmp/bottles.webp" type="image/webp" />
+										<img src="img/tmp/bottles.png" alt="">
+									</picture>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-footer">
+							<div class="item">
+								<button class="btn btn-light" data-modal="#subscribe-modal">Запишитесь на первый сеанс</button>
+							</div>
+							<div class="item">
+								<p>и получите карту в подарок</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="special-offers-section offers-slider-scope">
+					<picture class="section-bg">
+						<img src="img/backgrounds/offers-bg.svg" alt="">
+					</picture>
+					<div class="container">
+						<div class="section-caption overline">
+							<h2 class="sc-title">Специальные предложения</h2>
+						</div>
+
+						<div class="offers-slider">
+							<div class="slide">
+								<a href="#" class="offer-card">
+									<picture class="card-bg">
+										<img src="img/offers/offer-1.jpg" alt="">
+									</picture>
+									<div class="card-header">
+										<div class="card-type">
+											<span class="card-type-text">Скидка</span>
+										</div>
+										<div class="card-header-content">
+											<h4 class="card-caption discount"><strong>20%</strong><br>на лазерное удаление волос!</h4>
+										</div>
+									</div>
+									<div class="card-hidden-content">
+										<p>Приведи подругу и <br>получи маникюр в подарок!</p>
+									</div>
+									<div class="card-footer">
+										<div class="btn">Подробнее</div>
+									</div>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="offer-card">
+									<picture class="card-bg">
+										<img src="img/offers/offer-2.jpg" alt="">
+									</picture>
+									<div class="card-header">
+										<div class="card-type">
+											<span class="card-type-text">Акция</span>
+										</div>
+										<div class="card-header-content">
+											<h4 class="card-caption">Маникюр в подарок!</h4>
+										</div>
+									</div>
+									<div class="card-hidden-content">
+										<p>Приведи подругу и <br>получи маникюр в подарок!</p>
+									</div>
+									<div class="card-footer">
+										<div class="btn">Подробнее</div>
+									</div>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="offer-card">
+									<picture class="card-bg">
+										<img src="img/offers/offer-3.jpg" alt="">
+									</picture>
+									<div class="card-header">
+										<div class="card-type">
+											<span class="card-type-text">Скидка</span>
+										</div>
+										<div class="card-header-content">
+											<h4 class="card-caption discount"><strong>10%</strong><br>на педикюр до конца весны!</h4>
+										</div>
+									</div>
+									<div class="card-hidden-content">
+										<p>Приведи подругу и <br>получи маникюр в подарок!</p>
+									</div>
+									<div class="card-footer">
+										<div class="btn">Подробнее</div>
+									</div>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="offer-card">
+									<picture class="card-bg">
+										<img src="img/offers/offer-1.jpg" alt="">
+									</picture>
+									<div class="card-header">
+										<div class="card-type">
+											<span class="card-type-text">Акция</span>
+										</div>
+										<div class="card-header-content">
+											<h4 class="card-caption">Маникюр в подарок!</h4>
+										</div>
+									</div>
+									<div class="card-hidden-content">
+										<p>Приведи подругу и <br>получи маникюр в подарок!</p>
+									</div>
+									<div class="card-footer">
+										<div class="btn">Подробнее</div>
+									</div>
+								</a>
+							</div>
+							<div class="slide">
+								<a href="#" class="offer-card">
+									<picture class="card-bg">
+										<img src="img/offers/offer-2.jpg" alt="">
+									</picture>
+									<div class="card-header">
+										<div class="card-type">
+											<span class="card-type-text">Скидка</span>
+										</div>
+										<div class="card-header-content">
+											<h4 class="card-caption discount"><strong>10%</strong><br>на педикюр до конца весны!</h4>
+										</div>
+									</div>
+									<div class="card-hidden-content">
+										<p>Приведи подругу и <br>получи маникюр в подарок!</p>
+									</div>
+									<div class="card-footer">
+										<div class="btn">Подробнее</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="section-footer">
+							<div class="item">
+								<a href="actions.html" class="btn btn-light">Узнать о всех акциях</a>
+							</div>
+							<div class="item">
+								<div class="offers-slider-nav default-slider-nav">
+									<div class="nav-arrows"></div>
+									<div class="nav-dots"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="brands-section">
+					<div class="container">
+						<div class="section-inner">
+							<div class="section-content">
+								<div class="section-caption with-red-line">
+									<h2 class="sc-title">Бренды косметики, <br>которые мы используем <br class="lg-hidden">в работе</h2>
+								</div>
+								<a href="#" class="text-link">Смотреть всю коллекцию</a>
+							</div>
+							<div class="section-slider">
+								<div class="brands-slider">
+									<div class="slide">
+										<img src="img/brands/lancome.png" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/brands/maybelline.png" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/brands/garnier.png" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/brands/maybelline.png" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/brands/garnier.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="testimonials-section testimonials-scope">
+					<picture class="section-bg">
+						<img src="img/backgrounds/testimonials-bg.svg" alt="">
+					</picture>
+					<div class="container">
+						<div class="section-caption text-center overline">
+							<h2 class="sc-title">Почитайте, что пишут о нас наши клиенты</h2>
+							<p class="sc-subtitle">Каждый второй клиент приходит к нам снова. Доверьтесь и Вы <br>профессионалам RED LODGE.</p>
+						</div>
+
+						<div class="section-inner">
+							<div class="section-slider-nav">
+								<div class="testimonials-nav-slider">
+									<div class="slide">
+										<div class="testimonial-author-card">
+											<div class="card-icon">
+												<img src="img/big-icons/woman.svg" alt="">
+											</div>
+											<div class="card-content">
+												<p class="card-date">1 мая 2019</p>
+												<p class="card-author">Валентина Власова</p>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="testimonial-author-card">
+											<div class="card-icon">
+												<img src="img/big-icons/woman.svg" alt="">
+											</div>
+											<div class="card-content">
+												<p class="card-date">1 мая 2019</p>
+												<p class="card-author">Валентина Власова</p>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="testimonial-author-card">
+											<div class="card-icon">
+												<img src="img/big-icons/woman.svg" alt="">
+											</div>
+											<div class="card-content">
+												<p class="card-date">1 мая 2019</p>
+												<p class="card-author">Валентина Власова</p>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="testimonial-author-card">
+											<div class="card-icon">
+												<img src="img/big-icons/woman.svg" alt="">
+											</div>
+											<div class="card-content">
+												<p class="card-date">1 мая 2019</p>
+												<p class="card-author">Валентина Власова</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-slider">
+								<div class="testimonials-slider">
+									<div class="slide">
+										<div class="testimonial-card">
+											<picture class="card-image">
+												<img src="img/tmp/testimonial-card-image.jpg" alt="">
+											</picture>
+											<div class="card-content tpg">
+												<p>Не могу сказать что попала в салон случайно. Очень уж подруги хвалили:). Третий раз записываюсь к Анастасии на маникюр и педикюр. </p>
+												<p>Я поняла почему хвалят, просто ругать не за что. Качество услуг идеальное. Это раз. Атмосфера в салоне дружественная, позитивная- это два. Все инструменты стерильные, ассортимент гель лаков впечатлительный, ну и дизайн ноготков на любой вкус. </p>
+												<p>Для меня было важно найти своего мастера, чтобы не мотаться по салонам. Я довольна.</p>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="testimonial-card">
+											<picture class="card-image">
+												<img src="img/tmp/testimonial-card-image.jpg" alt="">
+											</picture>
+											<div class="card-content tpg">
+												<p>Не могу сказать что попала в салон случайно. Очень уж подруги хвалили:). Третий раз записываюсь к Анастасии на маникюр и педикюр. </p>
+												<p>Я поняла почему хвалят, просто ругать не за что. Качество услуг идеальное. Это раз. Атмосфера в салоне дружественная, позитивная- это два. Все инструменты стерильные, ассортимент гель лаков впечатлительный, ну и дизайн ноготков на любой вкус. </p>
+												<p>Для меня было важно найти своего мастера, чтобы не мотаться по салонам. Я довольна.</p>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="testimonial-card">
+											<picture class="card-image">
+												<img src="img/tmp/testimonial-card-image.jpg" alt="">
+											</picture>
+											<div class="card-content tpg">
+												<p>Не могу сказать что попала в салон случайно. Очень уж подруги хвалили:). Третий раз записываюсь к Анастасии на маникюр и педикюр. </p>
+												<p>Я поняла почему хвалят, просто ругать не за что. Качество услуг идеальное. Это раз. Атмосфера в салоне дружественная, позитивная- это два. Все инструменты стерильные, ассортимент гель лаков впечатлительный, ну и дизайн ноготков на любой вкус. </p>
+												<p>Для меня было важно найти своего мастера, чтобы не мотаться по салонам. Я довольна.</p>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="testimonial-card">
+											<picture class="card-image">
+												<img src="img/tmp/testimonial-card-image.jpg" alt="">
+											</picture>
+											<div class="card-content tpg">
+												<p>Не могу сказать что попала в салон случайно. Очень уж подруги хвалили:). Третий раз записываюсь к Анастасии на маникюр и педикюр. </p>
+												<p>Я поняла почему хвалят, просто ругать не за что. Качество услуг идеальное. Это раз. Атмосфера в салоне дружественная, позитивная- это два. Все инструменты стерильные, ассортимент гель лаков впечатлительный, ну и дизайн ноготков на любой вкус. </p>
+												<p>Для меня было важно найти своего мастера, чтобы не мотаться по салонам. Я довольна.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-footer">
+							<a href="testimonials.html" class="btn btn-light">Читать все отзывы</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="instagram-section">
+					<div class="container">
+						<div class="section-caption with-red-line">
+							<h2 class="sc-title">Подписывайтесь на наш инстаграм <br><a href="#" target="_blank" rel="nofollow">@redlodge_moscow</a>, там много интересного</h2>
+						</div>
+
+						<div class="instagram-list">
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-2.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-3.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-4.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-5.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-6.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-7.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-8.jpg" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="section-footer">
+							<a href="#" class="btn btn-light" target="_blank" rel="nofollow">Подписаться</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="subscribe-section">
+					<picture class="section-bg">
+						<img src="img/backgrounds/subscribe-bg.svg" alt="">
+					</picture>
+					<div class="container">
+						<div class="section-inner">
+							<div class="section-image">
+								<img src="img/tmp/subscribe-image.jpg" alt="">
+							</div>
+							<div class="section-content">
+								<div class="section-caption">
+									<h2 class="sc-title">Приходите в гости!</h2>
+									<p class="sc-subtitle">Мы подарим вам бонусную карту и теплые положительные эмоции <br>от работы наших Beuaty мастеров</p>
+								</div>
+
+								<div class="subscribe-form form">
+									<form action="#">
+										<div class="form-row columns-2">
+											<div class="column">
+												<div class="form-field">
+													<input type="text" class="input-field" placeholder="Ваше имя:">
+												</div>
+											</div>
+											<div class="column">
+												<div class="form-field">
+													<input type="tel" class="input-field" placeholder="Телефон:">
+												</div>
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-field">
+												<select class="select">
+													<option selected disabled>На какую услугу вас записать?</option>
+													<option value="Услуга 1">Услуга 1</option>
+													<option value="Услуга 2">Услуга 2</option>
+													<option value="Услуга 3">Услуга 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-row">
+											<label class="checkbox">
+												<input type="checkbox">
+												<span class="checkbox-label">Даю свое согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+											</label>
+										</div>
+										<div class="form-row last">
+											<button class="btn" type="submit">Записаться</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer class="footer" role="contentinfo">
+			<div class="footer-row first">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block">
+							<a href="index.html" class="logo-block">
+								<img src="img/logo.png" alt="">
+							</a>
+						</div>
+						<div class="footer-block md-hidden">
+							<nav class="top-nav">
+								<ul>
+									<li><a href="#">О салоне</a></li>
+									<li><a href="#">Услуги</a></li>
+									<li><a href="#">Цены</a></li>
+									<li><a href="#">Акции</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer-block">
+							<div class="phone-block">
+								<a href="tel:+74953747581" class="phone-link">+7 (495) 374-75-81</a>
+								<a href="https://wa.me/74953747581" class="whatsapp-link">
+									<svg class="link-icon">
+										<use xlink:href="img/icons-sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row second">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block">
+							<p class="worktime"><strong>Часы работы:</strong> <br><strong>Будни</strong> 8:00 до 22:00 ч. <br class="lg-visible"><strong>Выходные</strong> с 10:00 до 22:00 ч</p>
+						</div>
+						<div class="footer-block">
+							<address class="addr-block">
+								<div class="block-addr">
+									<svg class="block-icon">
+										<use xlink:href="img/icons-sprite.svg#location"></use>
+									</svg>
+									<div class="block-text">
+										<p>м. Таганская, <br class="lg-visible">ул. Воронцовская, д. 26</p>
+									</div>
+								</div>
+								<div class="block-socials">
+									<ul class="socials-list">
+										<li>
+											<a href="#" target="_blank" rel="nofollow" title="Instagram" class="instagram">
+												<svg class="link-icon">
+													<use xlink:href="img/icons-sprite.svg#instagram"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#" target="_blank" rel="nofollow" title="Facebook" class="facebook">
+												<svg class="link-icon">
+													<use xlink:href="img/icons-sprite.svg#facebook"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</address>
+						</div>
+						<div class="footer-block">
+							<button class="text-link" data-modal="#subscribe-modal">Подписаться на рассылку</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row third">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block">
+							<p class="license">МЕДИЦИНСКАЯ ЛИЦЕНЗИЯ <br class="md-visible-inline"><span class="nowrap">ЛО-77-01-111111 от 22.22.2222</span></p>
+						</div>
+						<div class="footer-block">
+							<p class="copyright">© 2020 ООО "Клиника&nbsp;Пластэк"</p>
+						</div>
+						<div class="footer-block">
+							<a href="https://webolution.ru/" target="_blank" class="webolution-logo">
+								<img src="img/webolution.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#top" class="to-top-btn">
+			<span class="btn-text">наверх</span>
+			<svg class="btn-icon">
+				<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
+			</svg>
+		</a>
+	</div>
+
+	<!-- <div class="modal video-modal" id="video-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Close"></button>
+				<div class="modal-video">
+					<div id="modal-video-iframe"></div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="modal" id="callback-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть"></button>
+				<div class="section-caption">
+					<h3 class="sc-title">Заказать звонок</h3>
+					<p class="sc-subtitle">Заполните форму и мы перезвоним вам для уточнения деталий записи</p>
+				</div>
+				<div class="order-form form">
+					<form action="#">
+						<div class="form-row">
+							<div class="form-field">
+								<input type="text" class="input-field" placeholder="Ваше имя:">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-field">
+								<input type="tel" class="input-field" placeholder="Телефон:">
+							</div>
+						</div>
+						<div class="form-row">
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox-label">Даю свое согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+							</label>
+						</div>
+						<div class="form-row last">
+							<button class="btn with-decoration" type="submit">Записаться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="subscribe-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть"></button>
+				<div class="section-caption">
+					<h3 class="sc-title">Записаться <br>на консультацию</h3>
+					<p class="sc-subtitle">Заполните форму и мы перезвоним вам для уточнения деталий записи</p>
+				</div>
+				<div class="order-form form">
+					<form action="#">
+						<div class="form-row">
+							<div class="form-field">
+								<input type="text" class="input-field" placeholder="Ваше имя:">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-field">
+								<input type="tel" class="input-field" placeholder="Телефон:">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-field">
+								<select class="select">
+									<option selected disabled>На какую услугу вас записать?</option>
+									<option value="Услуга 1">Услуга 1</option>
+									<option value="Услуга 2">Услуга 2</option>
+									<option value="Услуга 3">Услуга 3</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox-label">Даю свое согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+							</label>
+						</div>
+						<div class="form-row last">
+							<button class="btn with-decoration" type="submit">Записаться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="newsletter-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть"></button>
+				<div class="section-caption">
+					<h3 class="sc-title">Будьте в курсе <br>событий!</h3>
+					<p class="sc-subtitle">Подпишитесь на рассылку горячих акций нашего салона</p>
+				</div>
+				<div class="order-form form">
+					<form action="#">
+						<div class="form-row">
+							<div class="form-field">
+								<input type="email" class="input-field" placeholder="Ваш Email:">
+							</div>
+						</div>
+						<div class="form-row">
+							<label class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox-label">Даю свое согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+							</label>
+						</div>
+						<div class="form-row last">
+							<button class="btn with-decoration" type="submit">Записаться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- <script src="js/wow.min.js"></script> -->
+	<script src="js/jquery.fancybox.min.js"></script>
+	<!-- <script src="//www.youtube.com/iframe_api"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script> -->
+	<script src="js/odometer.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

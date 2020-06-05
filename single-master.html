@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Страница мастера | Red Lodge</title>
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+	<link rel="stylesheet" href="css/odometer-theme-minimal.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper" id="top">
+		<!-- ↓↓ тут нужно добавить класс .inner-page для всех внутренних страниц ↓↓ -->
+		<div class="page inner-page">
+			<header class="header">
+				<div class="container">
+					<div class="header-inner">
+						<div class="header-block">
+							<a href="index.html" class="logo-block">
+								<img src="img/logo.png" alt="">
+							</a>
+						</div>
+						<div class="header-block md-hidden">
+							<nav class="top-nav">
+								<ul>
+									<li><a href="about.html">О салоне</a></li>
+									<li><a href="services.html">Услуги</a></li>
+									<li><a href="prices.html">Цены</a></li>
+									<li><a href="actions.html">Акции</a></li>
+									<li><a href="reviews.html">Отзывы</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header-block flex">
+							<div class="phone-block">
+								<a href="tel:+74953747581" class="phone-link sm-hidden">+7 (495) 374-75-81</a>
+								<a href="https://wa.me/74953747581" class="whatsapp-link">
+									<svg class="link-icon">
+										<use xlink:href="img/icons-sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+							</div>
+							<button class="menu-opener md-visible-flex" aria-label="Навигация">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="mobile-top-nav">
+					<ul class="mobile-nav">
+						<li><a href="about.html">О салоне</a></li>
+						<li><a href="services.html">Услуги</a></li>
+						<li><a href="prices.html">Цены</a></li>
+						<li><a href="actions.html">Акции</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<div class="nav-content">
+						<a href="tel:+74953747581" class="phone-link sm-visible">+7 (495) 374-75-81</a>
+						<button class="btn btn-light" data-modal="#callback-modal">Обратный звонок</button>
+					</div>
+				</div>
+			</header>
+			<div class="page-content">
+				<section class="breadcrumbs-section">
+					<div class="container">
+						<ol class="breadcrumbs">
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="team.html">Команда</a></li>
+							<li>Страница мастера</li>
+						</ol>
+					</div>
+				</section>
+
+				<section class="single-master-section">
+					<div class="container">
+						<div class="section-header">
+							<div class="item">
+								<div class="section-caption">
+									<h1 class="sc-title">Татьяна Сулимова <br>Парикмахер-стилист</h1>
+								</div>
+							</div>
+							<div class="item">
+								<button class="btn btn-light">Задать вопрос специалисту</button>
+							</div>
+						</div>
+
+						<div class="section-inner">
+							<div class="section-image">
+								<picture class="image-with-border">
+									<img src="img/team/single-master.jpg" alt="">
+								</picture>
+							</div>
+							<div class="section-content">
+								<div class="section-quote">
+									<p>Уход за собой должен начаться с сердца, в противном случае никакая косметика не поможет.</p>
+								</div>
+								<ul class="master-info-list">
+									<li><strong>Образование:</strong> <br>Прошла многоступенчатое обучение в Академии Loreal, обучение в студии GOLDWELL, KEUNE</li>
+									<li><strong>Об опыте:</strong><br>Опыт работы более 10 лет</li>
+									<li><strong>Пройденные курсы:</strong></li>
+								</ul>
+
+								<div class="courses-slider-wrapper">
+									<div class="courses-slider-inner">
+										<div class="courses-slider">
+											<div class="slide">Многоступенчатое обучение в Академии Loreal</div>
+											<div class="slide">Многоступенчатое обучение в Академии Loreal</div>
+											<div class="slide">Многоступенчатое обучение в Академии Loreal</div>
+										</div>
+									</div>
+									<div class="courses-slider-nav default-slider-nav">
+										<div class="nav-dots"></div>
+										<div class="nav-arrows"></div>
+									</div>
+								</div>
+
+								<div class="section-footer">
+									<button class="btn">Получить консультацию</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="master-sliders-section master-sliders-scope">
+					<div class="container">
+						<div class="section-header">
+							<div class="item">
+								<div class="sliders-tabs-nav">
+									<button class="slider-tabs-btn" data-tab=".works-photos">Фотографии работ</button>
+									<button class="slider-tabs-btn" data-tab=".diplomas-photos">Дипломы и сертификаты</button>
+								</div>
+							</div>
+							<div class="item">
+								<div class="tab works-photos">
+									<div class="master-works-slider-nav default-slider-nav">
+										<div class="nav-arrows"></div>
+										<div class="nav-dots"></div>
+									</div>
+								</div>
+								<div class="tab diplomas-photos">
+									<div class="master-diplomas-slider-nav default-slider-nav">
+										<div class="nav-arrows"></div>
+										<div class="nav-dots"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs-container">
+							<div class="tab works-photos">
+								<div class="master-slider master-works-slider">
+									<div class="slide">
+										<img src="img/works/image-1.jpg" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/works/image-2.jpg" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/works/image-3.jpg" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/works/image-4.jpg" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/works/image-1.jpg" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/works/image-2.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="tab diplomas-photos">
+								<div class="master-slider master-diplomas-slider">
+									<div class="slide">
+										<img src="img/works/image-1.jpg" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/works/image-2.jpg" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/works/image-3.jpg" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/works/image-4.jpg" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/works/image-1.jpg" alt="">
+									</div>
+									<div class="slide">
+										<img src="img/works/image-2.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="faq-section">
+					<picture class="section-bg">
+						<img src="img/backgrounds/faq-bg.svg" alt="">
+					</picture>
+					<div class="container">
+						<div class="section-caption overline">
+							<h2 class="sc-title">Часто задаваемые вопросы и ответы</h2>
+						</div>
+
+						<div class="section-content">
+							<div class="accordion">
+								<div class="ac-header">
+									<h3 class="ac-caption">Как влияет на здоровье волос частое окрашивание?</h3>
+									<button class="ac-opener">
+										<svg class="btn-icon"><use xlink:href="img/icons-sprite.svg#arrow-down"></use></svg>
+									</button>
+								</div>
+								<div class="ac-content tpg">
+									<p>это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+								</div>
+							</div>
+							<div class="accordion">
+								<div class="ac-header">
+									<h3 class="ac-caption">Как влияет на здоровье волос частое окрашивание? Часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной </h3>
+									<button class="ac-opener">
+										<svg class="btn-icon"><use xlink:href="img/icons-sprite.svg#arrow-down"></use></svg>
+									</button>
+								</div>
+								<div class="ac-content tpg">
+									<p>это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+								</div>
+							</div>
+							<div class="accordion">
+								<div class="ac-header">
+									<h3 class="ac-caption">Как влияет на здоровье волос частое окрашивание?</h3>
+									<button class="ac-opener">
+										<svg class="btn-icon"><use xlink:href="img/icons-sprite.svg#arrow-down"></use></svg>
+									</button>
+								</div>
+								<div class="ac-content tpg">
+									<p>это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-footer">
+							<button class="btn btn-light">Задать вопрос специалисту</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="instagram-section">
+					<div class="container">
+						<div class="section-caption with-red-line">
+							<h2 class="sc-title">Подписывайтесь на наш инстаграм <br><a href="#" target="_blank" rel="nofollow">@redlodge_moscow</a>, там много интересного</h2>
+						</div>
+
+						<div class="instagram-list">
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-2.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-3.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-4.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-5.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-6.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-7.jpg" alt="">
+								</div>
+							</div>
+							<div class="item">
+								<div class="instagram-card">
+									<img src="img/instagram/image-8.jpg" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="section-footer">
+							<a href="#" class="btn btn-light" target="_blank" rel="nofollow">Подписаться</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="subscribe-section">
+					<picture class="section-bg">
+						<img src="img/backgrounds/subscribe-bg.svg" alt="">
+					</picture>
+					<div class="container">
+						<div class="section-inner">
+							<div class="section-image">
+								<img src="img/tmp/subscribe-image.jpg" alt="">
+							</div>
+							<div class="section-content">
+								<div class="section-caption">
+									<h2 class="sc-title">Приходите в гости!</h2>
+									<p class="sc-subtitle">Мы подарим вам бонусную карту и теплые положительные эмоции <br>от работы наших Beuaty мастеров</p>
+								</div>
+
+								<div class="subscribe-form form">
+									<form action="#">
+										<div class="form-row columns-2">
+											<div class="column">
+												<div class="form-field">
+													<input type="text" class="input-field" placeholder="Ваше имя:">
+												</div>
+											</div>
+											<div class="column">
+												<div class="form-field">
+													<input type="tel" class="input-field" placeholder="Телефон:">
+												</div>
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-field">
+												<select class="select">
+													<option selected disabled>На какую услугу вас записать?</option>
+													<option value="Услуга 1">Услуга 1</option>
+													<option value="Услуга 2">Услуга 2</option>
+													<option value="Услуга 3">Услуга 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-row">
+											<label class="checkbox">
+												<input type="checkbox">
+												<span class="checkbox-label">Даю свое согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+											</label>
+										</div>
+										<div class="form-row last">
+											<button class="btn" type="submit">Записаться</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer class="footer" role="contentinfo">
+			<div class="footer-row first">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block">
+							<a href="index.html" class="logo-block">
+								<img src="img/logo.png" alt="">
+							</a>
+						</div>
+						<div class="footer-block md-hidden">
+							<nav class="top-nav">
+								<ul>
+									<li><a href="#">О салоне</a></li>
+									<li><a href="#">Услуги</a></li>
+									<li><a href="#">Цены</a></li>
+									<li><a href="#">Акции</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer-block">
+							<div class="phone-block">
+								<a href="tel:+74953747581" class="phone-link">+7 (495) 374-75-81</a>
+								<a href="https://wa.me/74953747581" class="whatsapp-link">
+									<svg class="link-icon">
+										<use xlink:href="img/icons-sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row second">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block">
+							<p class="worktime"><strong>Часы работы:</strong> <br><strong>Будни</strong> 8:00 до 22:00 ч. <br class="lg-visible"><strong>Выходные</strong> с 10:00 до 22:00 ч</p>
+						</div>
+						<div class="footer-block">
+							<address class="addr-block">
+								<div class="block-addr">
+									<svg class="block-icon">
+										<use xlink:href="img/icons-sprite.svg#location"></use>
+									</svg>
+									<div class="block-text">
+										<p>м. Таганская, <br class="lg-visible">ул. Воронцовская, д. 26</p>
+									</div>
+								</div>
+								<div class="block-socials">
+									<ul class="socials-list">
+										<li>
+											<a href="#" target="_blank" rel="nofollow" title="Instagram" class="instagram">
+												<svg class="link-icon">
+													<use xlink:href="img/icons-sprite.svg#instagram"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#" target="_blank" rel="nofollow" title="Facebook" class="facebook">
+												<svg class="link-icon">
+													<use xlink:href="img/icons-sprite.svg#facebook"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</address>
+						</div>
+						<div class="footer-block">
+							<button class="text-link" data-modal="#subscribe-modal">Подписаться на рассылку</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-row third">
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-block">
+							<p class="license">МЕДИЦИНСКАЯ ЛИЦЕНЗИЯ <br class="md-visible-inline"><span class="nowrap">ЛО-77-01-111111 от 22.22.2222</span></p>
+						</div>
+						<div class="footer-block">
+							<p class="copyright">© 2020 ООО "Клиника&nbsp;Пластэк"</p>
+						</div>
+						<div class="footer-block">
+							<a href="https://webolution.ru/" target="_blank" class="webolution-logo">
+								<img src="img/webolution.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#top" class="to-top-btn">
+			<span class="btn-text">наверх</span>
+			<svg class="btn-icon">
+				<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
+			</svg>
+		</a>
+	</div>
+
+	<!-- <div class="modal video-modal" id="video-modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Close"></button>
+				<div class="modal-video">
+					<div id="modal-video-iframe"></div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- <div class="modal narrow" id="modal-order" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Закрыть"></button>
+				<h3 class="modal-caption">Заказать звонок</h3>
+				<p>Отправьте заявку и мы <br>перезвоним в течении 60 секунд</p>
+				<div class="order-form form">
+					<form action="#">
+						<div class="form-row">
+							<div class="form-field">
+								<input type="text" class="input-field" placeholder="Имя">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-field">
+								<input type="tel" class="input-field" placeholder="Телефон">
+							</div>
+						</div>
+						<div class="form-row">
+							<p class="form-note">Отправляя данную форму, вы соглашаетесь с <a href="#">Политикой конфиденциальности</a></p>
+						</div>
+						<div class="form-row last">
+							<button class="btn" type="submit">Жду звонка</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- <script src="js/wow.min.js"></script> -->
+	<script src="js/jquery.fancybox.min.js"></script>
+	<!-- <script src="//www.youtube.com/iframe_api"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script> -->
+	<script src="js/odometer.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

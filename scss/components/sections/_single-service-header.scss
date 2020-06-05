@@ -1,0 +1,256 @@
+.single-service-header{
+	padding: 95px 0 35px;
+
+	.section-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: calc(100% + 10px * 2);
+		margin-left: -10px;
+		margin-right: -10px;
+		margin-bottom: 55px;
+		
+		.item{
+			padding: 0 10px;
+		}
+	}
+
+	.section-prices{
+		padding-top: 75px;
+		padding-bottom: 80px;
+
+		.section-caption{
+			text-align: center;
+
+			.sc-title{
+				padding-left: 0;
+
+				&:before{
+					display: none;
+				}
+			}
+		}
+
+		.tab-header{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: calc(100% + 10px * 2);
+			margin-left: -10px;
+			margin-right: -10px;
+			margin-bottom: 40px;
+			justify-content: center;
+			
+			.item{
+				padding: 0 10px;
+			}
+
+			@media screen and (max-width: 767px){
+				justify-content: space-between;
+			}
+
+			@media screen and (max-width: 575px){
+				flex-direction: column;
+
+				.item{
+					margin-bottom: 25px;
+
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		padding-top: 50px;
+
+		.section-prices{
+			padding-top: 30px;
+			padding-bottom: 0;
+		}
+
+		.offer-card{
+			.card-caption:not(.discount){
+				font-size: 26px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.section-header{
+			flex-direction: column;
+			align-items: stretch;
+
+			.item{
+				margin-bottom: 25px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+
+			.btn{
+				width: 220px;
+				margin-left: auto;
+				margin-right: auto;
+				display: flex;
+				white-space: nowrap;
+			}
+		}
+	}
+}
+
+.services-nav{
+	display: flex;
+	width: calc(100% + 10px * 2);
+	margin-left: -10px;
+	margin-right: -10px;
+	
+	.item{
+		padding: 0 10px;
+		width: 20%;
+	}
+}
+
+.nav-card{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 24px 20px 20px;
+	background: #f7f9fa;
+	color: $text-dark;
+	justify-content: space-between;
+	margin-bottom: 30px;
+
+	.card-caption{
+		font-size: 14px;
+		line-height: 17px;
+		margin-bottom: 12px;
+		padding-bottom: 7px;
+		position: relative;
+		text-transform: uppercase;
+		font-weight: 600;
+
+		&:after{
+			content: '';
+			display: block;
+			transition: all $t;
+			width: 0;
+			height: 2px;
+			background: $primary;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0;
+		}
+	}
+
+	.card-icon{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		fill: #000;
+		transition: all $t;
+		width: 60px;
+		height: 60px;
+
+		img{
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	&:hover,
+	&.current-menu-item,
+	&.current{
+		background: #fff;
+		box-shadow: 0px 8px 20px rgba(214, 222, 226, 0.42);
+
+		.card-icon{
+			fill: $primary;
+		}
+
+		.card-caption:after{
+			width: 30px;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		.card-caption{
+			font-size: 12px;
+		}
+	}
+}
+
+.mobile-services-nav{
+	display: flex;
+	justify-content: center;
+	width: calc(100% + 10px * 2);
+	margin-left: -10px;
+	margin-right: -10px;
+	
+	.item{
+		padding: 0 10px;
+	}
+
+	.nav-card{
+		display: block;
+		background: transparent !important;
+		padding: 0;
+		box-shadow: none !important;
+
+		.card-icon{
+			width: 60px;
+			height: 60px;
+
+			@media screen and (max-width: 575px){
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+}
+
+.mobile-selected-category{
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	background: #FFFFFF;
+	box-shadow: 0px 8px 20px rgba(214, 222, 226, 0.42);
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 440px;
+
+	.card-caption{
+		font-size: 14px;
+		line-height: 17px;
+		padding-bottom: 7px;
+		position: relative;
+		text-transform: uppercase;
+		font-weight: 600;
+
+		&:after{
+			content: '';
+			display: block;
+			transition: all $t;
+			width: 30px;
+			height: 2px;
+			background: $primary;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0;
+		}
+
+		@media screen and (max-width: 575px){
+			font-size: 12px;
+			line-height: 15px;
+		}
+	}
+}

@@ -1,0 +1,175 @@
+.footer{
+	position: relative;
+	z-index: 50;
+	background: #fff;
+
+	.footer-row{
+		.footer-inner{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: calc(100% + 10px * 2);
+			margin-left: -10px;
+			margin-right: -10px;
+			
+			.footer-block{
+				padding: 0 10px;
+
+				&:nth-child(2){
+					flex: auto;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+				&:nth-child(3){
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+		}
+
+		&.first{
+			padding: 70px 0 33px;
+		}
+
+		&.second{
+			padding: 33px 0 31px;
+			border-top: 1px solid #EDEDED;
+		}
+
+		&.third{
+			padding: 10px 0;
+		}
+
+		@media screen and (min-width: 1300px){
+			.footer-inner{
+				.footer-block{
+					&:nth-child(3){
+						width: 25%;
+					}
+				}
+			}
+
+			&.first{
+				.footer-inner .footer-block:nth-child(1){
+					width: 25%;
+				}
+			}
+
+			&.second{
+				.footer-inner .footer-block:nth-child(1){
+					width: 33.333%;
+				}
+			}
+
+			&.third{
+				.footer-inner .footer-block:nth-child(1){
+					width: 33.333%;
+				}
+			}
+		}
+
+		@media screen and (max-width: 991px){
+			&.first{
+				padding-top: 30px;
+			}
+		}
+
+		@media screen and (max-width: 767px){
+			&.second{
+				.footer-inner{
+					flex-direction: column;
+					text-align: center;
+
+					.footer-block{
+						margin-bottom: 30px;
+
+						&:last-child{
+							margin-bottom: 0;
+						}
+					}
+				}
+
+				.addr-block{
+					flex-direction: column;
+					align-items: center;
+
+					.block-addr{
+						margin-right: 0;
+						margin-bottom: 20px;
+					}
+
+					.block-addr{
+						flex-direction: column;
+						align-items: center;
+
+						.block-icon{
+							margin-right: 0;
+							margin-bottom: 10px;
+							width: 30px;
+							height: 38px;
+						}
+					}
+				}
+			}
+
+			&.third{
+				padding-bottom: 30px;
+
+				.footer-inner{
+					flex-direction: column;
+					text-align: center;
+
+					.footer-block{
+						margin-bottom: 30px;
+
+						&:last-child{
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+
+		@media screen and (max-width: 575px){
+			&.first{
+				.footer-inner{
+					flex-direction: column;
+					text-align: center;
+
+					.footer-block{
+						margin-bottom: 30px;
+
+						&:last-child{
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.worktime{
+		font-size: 14px;
+		line-height: 2;
+		color: $text-dark;
+
+		strong{
+			font-weight: 600;
+		}
+	}
+
+	.license,
+	.copyright{
+		font-size: 14px;
+		line-height: 23px;
+		color: rgba(#313131, .56);
+	}
+}
+
+.webolution-logo{
+	img{
+		display: block;
+	}
+}

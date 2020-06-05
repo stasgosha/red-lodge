@@ -1,0 +1,106 @@
+.advantages-section{
+	padding: 110px 0 120px;
+
+	.section-caption{
+		margin-bottom: 75px;
+	}
+
+	@media screen and (max-width: 991px){
+		padding: 50px 0;
+	}
+}
+
+.advantages-list{
+	display: flex;
+	width: calc(100% + 15px * 2);
+	margin-left: -15px;
+	margin-right: -15px;
+	
+	.item{
+		padding: 0 15px;
+		width: 25%;
+	}
+
+	@media screen and (max-width: 991px){
+		flex-wrap: wrap;
+		margin-bottom: -50px;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.item{
+			width: 50%;
+			margin-bottom: 50px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		max-width: unset;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+
+.advantage-card{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.card-icon{
+		width: 132px;
+		height: 132px;
+		border-radius: 50%;
+		background: #fff;
+		border: 16px solid #f2f2f3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 5px;
+		position: relative;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 144px;
+			height: 67px;
+			background: url(../img/decorations/leaves.svg) no-repeat center center / contain;
+			position: absolute;
+			right: calc(-25px - 16px);
+			top: calc(-5px - 16px);
+			z-index: -1;
+		}
+
+		img{
+			max-width: 64px;
+			max-height: 64px;
+			display: block;
+		}
+	}
+
+	.card-caption{
+		font-size: 18px;
+		line-height: 1.388;
+		color: $text-dark;
+		text-align: center;
+		font-weight: 600;
+
+		strong{
+			color: $primary;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.card-icon{
+			border-width: 8px;
+		}
+
+		.card-caption{
+			font-size: 15px;
+
+			br{
+				display: none;
+			}
+		}
+	}
+}

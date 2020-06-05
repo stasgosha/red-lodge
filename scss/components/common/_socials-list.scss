@@ -1,0 +1,44 @@
+.socials-list{
+	list-style: none;
+	display: flex;
+
+	li{
+		margin-right: 10px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&.instagram{
+				background: #E23674;
+
+				&:hover{
+					background: darken(#E23674, 10%);
+				}
+			}
+
+			&.facebook{
+				background: #3852B0;
+
+				&:hover{
+					background: darken(#3852B0, 10%);
+				}
+			}
+
+			.link-icon{
+				width: 14px;
+				height: 14px;
+				fill: #fff;
+				display: block;
+			}
+		}
+	}
+}

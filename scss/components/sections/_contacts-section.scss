@@ -1,0 +1,156 @@
+.contacts-section{
+	padding: 70px 0 80px;
+	position: relative;
+
+	.section-map{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			object-fit: cover;
+			object-position: center center;
+			font-family: 'object-fit: cover; object-position: center center;';
+		}
+
+		iframe{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	.contacts-block{
+		position: relative;
+		z-index: 2;
+	}
+
+	@media screen and (max-width: 767px){
+		.section-map{
+			height: 400px;
+		}
+
+		.contacts-card{
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 200px;
+			box-shadow: 0px 8px 20px rgba(214, 222, 226, 0.42);
+			width: auto;
+			max-width: 410px;
+		}
+	}
+}
+
+.contacts-card{
+	background: #fff;
+	position: relative;
+	width: 620px;
+	padding: 60px 85px 85px;
+
+	&:before{
+		content: '';
+		display: block;
+		width: calc(100% - 15px * 2);
+		height: calc(100% - 15px * 2);
+		border: 6px solid #F2F3F4;
+		position: absolute;
+		left: 15px;
+		top: 15px;
+		pointer-events: none;
+		z-index: 2;
+	}
+
+	&:after{
+		content: '';
+		display: block;
+		width: 275px;
+		height: 348px;
+		background: url(../img/decorations/contacts-leaves.svg) no-repeat right bottom / contain;
+		position: absolute;
+		right: -20px;
+		bottom: -23px;
+		pointer-events: none;
+	}
+
+	.breadcrumbs{
+		margin-bottom: 25px;
+	}
+
+	.section-caption{
+		margin-bottom: 25px;
+	}
+
+	.email-link{
+		color: #A5A5A5;
+		font-size: 16px;
+		line-height: 28px;
+		margin-bottom: 20px;
+		display: inline-block;
+	}
+
+	.card-content{
+		position: relative;
+		z-index: 2;
+	}
+
+	@media screen and (max-width: 1299px){
+		width: 500px;
+	}
+
+	@media screen and (max-width: 991px){
+		padding: 40px 45px 45px;
+		width: 410px;
+	}
+}
+
+.small-phone-block{
+	display: flex;
+	align-items: center;
+
+	.phone-link{
+		margin-right: 10px;
+	}
+}
+
+.contacts-list{
+	margin-bottom: 20px;
+
+	.item{
+		display: flex;
+		margin-bottom: 15px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		.item-icon{
+			width: 20px;
+			height: 20px;
+			margin-right: 15px;
+			fill: $primary;
+			flex: none;
+		}
+
+		.item-text{
+			font-size: 16px;
+			line-height: 20px;
+			color: $text-dark;
+		}
+
+		.worktime-text{
+			&:first-line{
+				margin-bottom: 8px;
+				display: block;
+			}
+		}
+	}
+}

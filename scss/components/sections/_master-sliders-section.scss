@@ -1,0 +1,150 @@
+.master-sliders-section{
+	padding: 45px 0 85px;
+
+	.section-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: calc(100% + 10px * 2);
+		margin-left: -10px;
+		margin-right: -10px;
+		margin-bottom: 45px;
+		
+		.item{
+			padding: 0 10px;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		padding-bottom: 50px;
+
+		.section-header{
+			flex-direction: column;
+
+			.item{
+				margin-bottom: 25px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.sliders-tabs-nav{
+	display: flex;
+
+	.slider-tabs-btn{
+		margin-right: 55px;
+		padding-left: 45px;
+		position: relative;
+		font-size: 22px;
+		line-height: 30px;
+		color: rgba(#000, .3);
+		transition: all $t;
+		text-transform: uppercase;
+		font-weight: 600;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 36px;
+			height: 4px;
+			background: rgba(#000, .3);
+			transition: all $t;
+			position: absolute;
+			top: 12px;
+			left: 0;
+		}
+
+		&:last-child{
+			margin-right: 0 !important;
+		}
+
+		&:hover{
+			color: #000;
+		}
+
+		&.current{
+			color: #000;
+
+			&:before{
+				background: $primary;
+			}
+		}
+
+		@media screen and (max-width: 1299px){
+			font-size: 18px;
+			margin-right: 30px;
+		}
+
+		@media screen and (max-width: 991px){
+			padding-left: 0;
+			padding-bottom: 7px;
+
+			&:before{
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 0;
+				top: auto;
+			}
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		flex-direction: column;
+
+		.slider-tabs-btn{
+			margin-bottom: 15px;
+			margin-right: 0;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.master-slider{
+	width: calc(200% + 20px);
+	margin-left: calc(-50% - 10px);
+	margin-right: calc(-50% - 10px);
+
+	.slide{
+		padding-left: 10px;
+		padding-right: 10px;
+
+		img{
+			display: block;
+			width: 100%;
+			height: 350px;
+			object-fit: cover;
+			object-position: center center;
+			font-family: 'object-fit: cover; object-position: center center;';
+		}
+	}
+
+	&.master-diplomas-slider{
+		.slide{
+			img{
+				height: 500px;
+
+				@media screen and (max-width: 767px){
+					height: 400px;
+				}
+
+				@media screen and (max-width: 575px){
+					height: 330px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		width: calc(100% + 30px * 2);
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+}

@@ -1,0 +1,89 @@
+.care-section{
+	padding: 70px 0;
+
+	.section-caption{
+		margin-bottom: 45px;
+	}
+
+	.section-footer{
+		margin-top: 55px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		.item{
+			margin-bottom: 15px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			p{
+				font-size: 15px;
+				line-height: 1.53;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		padding: 50px 0;
+	}
+}
+
+.boutique-card{
+	height: 100%;
+	background: #F5F5F5;
+	padding: 55px;
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	.card-caption{
+		font-size: 18px;
+		line-height: 28px;
+		color: $text-color;
+		font-weight: 400;
+
+		strong{
+			font-weight: 600;
+			font-size: 26px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+		}
+	}
+
+	.card-image{
+		position: absolute;
+		right: 25px;
+		top: 50%;
+		transform: translateY(-50%) rotate(30deg);
+	}
+
+	@media screen and (max-width: 1299px){
+		.card-image{
+			right: -35px;
+			top: 40%;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		min-height: 270px;
+
+		.card-image{
+			right: 15px;
+			top: 50%;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		flex-direction: column;
+		padding: 30px;
+
+		.card-image{
+			position: static;
+			transform: rotate(30deg);
+		}
+	}
+}
