@@ -88,7 +88,7 @@
 
 	.card-content{
 		position: relative;
-		z-index: 5;
+		z-index: 6;
 		max-width: 565px;
 	}
 
@@ -186,7 +186,7 @@
 
 	@media screen and (max-width: 1299px){
 		.card-image{
-			right: -270px;
+			right: -100px;
 		}
 
 		&.get-in-touch{

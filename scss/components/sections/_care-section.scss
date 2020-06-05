@@ -35,6 +35,7 @@
 .boutique-card{
 	height: 100%;
 	background: #F5F5F5;
+	background: url(../img/backgrounds/boutique-card-bg.svg) no-repeat right bottom / cover;
 	padding: 55px;
 	position: relative;
 	display: flex;
@@ -61,10 +62,10 @@
 		transform: translateY(-50%) rotate(30deg);
 	}
 
-	@media screen and (max-width: 1299px){
+	@media screen and (max-width: 1129px){
 		.card-image{
 			right: -35px;
-			top: 40%;
+			// top: 40%;
 		}
 	}
 

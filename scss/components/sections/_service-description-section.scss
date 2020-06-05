@@ -51,6 +51,15 @@
 			width: 335px;
 			margin-right: 70px;
 		}
+
+		.section-slider{
+			.photos-slider-nav{
+				right: auto;
+				left: 100px;
+				width: 350px;
+				justify-content: flex-end;
+			}
+		}
 	}
 
 	@media screen and (max-width: 991px){
@@ -83,6 +92,7 @@
 
 			.photos-slider-nav{
 				position: static;
+				width: 100%;
 				justify-content: flex-end;
 			}
 		}

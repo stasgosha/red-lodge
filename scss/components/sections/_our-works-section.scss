@@ -60,6 +60,7 @@
 		.section-content{
 			// width: 400px;
 			width: calc(100% - 330px);
+			max-width: 690px;
 		}
 
 		.section-sliders{
@@ -147,6 +148,16 @@
 				object-position: center center;
 				font-family: 'object-fit: cover; object-position: center center;';
 			}
+		}
+	}
+
+	@media screen and (max-width: 1299px){
+		.slide img{
+			width: 100%;
+			height: 350px;
+			object-fit: cover;
+			object-position: center center;
+			font-family: 'object-fit: cover; object-position: center center;';
 		}
 	}
 }
