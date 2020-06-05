@@ -256,6 +256,10 @@
 			left: 0;
 			bottom: -7px;
 		}
+
+		@media screen and (max-width: 374px){
+			font-size: 15px;
+		}
 	}
 
 	&:hover{

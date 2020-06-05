@@ -233,10 +233,10 @@
 	}
 
 	&:hover{
-		background: $primary;
+		border-color: #000;
 
 		.link-icon{
-			fill: #fff;
+			fill: #000;
 		}
 	}
 

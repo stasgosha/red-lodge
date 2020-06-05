@@ -248,8 +248,8 @@ document.addEventListener('DOMContentLoaded', function(){
 					breakpoint: 1300,
 					settings: {
 						vertical: false,
-						slidesToShow: 1,
-						centerPadding: '30%'
+						slidesToShow: 3,
+						centerPadding: '0'
 					}
 				},
 				{

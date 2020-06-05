@@ -1,23 +1,35 @@
 .action-cards-block{
 	display: flex;
 	overflow: hidden;
+	height: 270px;
+	width: 100%;
+	position: relative;
 
 	.block-item{
+		position: absolute;
+		left: 0;
+		top: 0;
 		width: 446px;
 		flex: none;
 		transition: all .5s;
+		height: 100%;
 
 		+ .block-item{
-			margin-left: -44%;
+			margin-left: 30%;
 		}
 
 		&:hover{
 			&:not(:first-child){
-				// margin-left: -65%;
+				@media screen and (max-width: 767px){
+					transform: translateX(-120px);
+				}
+				@media screen and (min-width: 768px){
+					// &:not()
+				}
 			}
 
 			+ .next{
-				margin-left: 0;
+				transform: translateX(60%);
 			}
 		}
 	}

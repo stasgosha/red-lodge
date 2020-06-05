@@ -167,6 +167,19 @@
 		align-items: center;
 		justify-content: center;
 		background: #fff;
+		transition: all $t;
+
+		@media screen and (max-width: 1299px){
+			margin-left: -58px;
+			opacity: 0;
+			visibility: hidden;
+
+			.slick-current &{
+				margin-left: 0;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
 
 		img{
 			display: block;
